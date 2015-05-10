@@ -1,0 +1,13 @@
+inherit qt5 cmake
+
+NAME="qterminal"
+VERSION=0.6.0
+RELEASE=1
+CATEGORY="Shells"
+SUMMARY="Qt terminal emulator"
+DESCRIPTION="Lightweight terminal emulator written in Qt"
+HOMEPAGE="https://github.com/qterminal/qterminal"
+SRC_URI="${HOMEPAGE}/releases/download/${VERSION}/qterminal-${VERSION}.tar.xz"
+PATCH_URI="0.6.0-cygwin-dllimport.patch"
+
+CYGCMAKE_ARGS="-DUSE_QT5=ON -DUSE_SYSTEM_QXT=OFF"

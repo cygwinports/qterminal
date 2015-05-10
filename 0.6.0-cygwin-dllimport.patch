@@ -1,0 +1,10 @@
+--- origsrc/qterminal-0.6.0/CMakeLists.txt	2014-10-22 03:13:14.000000000 -0500
++++ src/qterminal-0.6.0/CMakeLists.txt	2015-05-10 17:48:17.170815600 -0500
+@@ -75,6 +75,7 @@ set(QTERM_MOC_SRC
+ )
+ 
+ if(NOT QXT_FOUND)
++    add_definitions(-DQXT_STATIC)
+     set(QTERM_SRC ${QTERM_SRC} src/third-party/qxtglobalshortcut.cpp)
+     set(QTERM_MOC_SRC ${QTERM_MOC_SRC} src/third-party/qxtglobalshortcut.h)
+ 
