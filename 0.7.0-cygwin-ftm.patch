@@ -1,0 +1,10 @@
+--- origsrc/qterminal-0.7.0/src/main.cpp	2016-09-23 17:50:45.000000000 -0500
++++ src/qterminal-0.7.0/src/main.cpp	2016-11-07 10:40:41.974494200 -0600
+@@ -16,6 +16,7 @@
+  *   along with this program.  If not, see <http://www.gnu.org/licenses/>. *
+  ***************************************************************************/
+ 
++#define _POSIX_C_SOURCE 200112L
+ #include <QApplication>
+ #include <QtGlobal>
+ 
