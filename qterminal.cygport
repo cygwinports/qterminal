@@ -1,13 +1,13 @@
 inherit qt5 cmake
 
 NAME="qterminal"
-VERSION=0.7.0
+VERSION=0.8.0
 RELEASE=1
 CATEGORY="Shells"
 SUMMARY="Qt terminal emulator"
 DESCRIPTION="Lightweight terminal emulator written in Qt"
 HOMEPAGE="http://lxqt.org/"
-SRC_URI="http://downloads.lxqt.org/qterminal/${VERSION}/${NAME}-${VERSION}.tar.xz"
+SRC_URI="http://downloads.lxqt.org/downloads/qterminal/${VERSION}/${NAME}-${VERSION}.tar.xz"
 PATCH_URI="
 	0.6.0-cygwin-dllimport.patch
 	0.7.0-cygwin-ftm.patch
